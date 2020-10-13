@@ -25,6 +25,6 @@ class MainActivity : AppCompatActivity() {
         val editText0_02 = findViewById<EditText>(R.id.editText0_02)
         val editText0_01 = findViewById<EditText>(R.id.editText0_01)
 
-        val amount200 = editText200.text.toString().toInt()*200
+       // val amount200 = editText200.text.toString().toInt()*200
     }
 }
