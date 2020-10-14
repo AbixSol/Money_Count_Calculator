@@ -12,34 +12,32 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        summ_Click()
 
-        val editText200  = findViewById<EditText>(R.id.editText200) as EditText
-
-        //val num200 = editText200.text.toString().textToInt()
-
-        var editText100 : Int  = (editText100.text.toString()).textToInt()
-        var num100 :String = (editText100 * 100).toString()
-
-        val editText50 = findViewById<EditText>(R.id.editText50)
-        val editText20 = findViewById<EditText>(R.id.editText20)
-        val editText10 = findViewById<EditText>(R.id.editText10)
-        val editText5 = findViewById<EditText>(R.id.editText5)
-        val editText2 = findViewById<EditText>(R.id.editText2)
-        val editText1 = findViewById<EditText>(R.id.editText1)
-        val editText05 = findViewById<EditText>(R.id.editText0_5)
-        val editText02 = findViewById<EditText>(R.id.editText0_2)
-        val editText01 = findViewById<EditText>(R.id.editText0_1)
-        val editText005 = findViewById<EditText>(R.id.editText0_05)
-        val editText002 = findViewById<EditText>(R.id.editText0_02)
-        val editText001 = findViewById<EditText>(R.id.editText0_01)
-
-        buttonTotal.setOnClickListener {
-            var totalMoney = num100
-            Toast.makeText(this, editText200.text, Toast.LENGTH_SHORT).show()
-            textViewTotal.text = totalMoney.toString()
-        }
     }
 
-}
+    fun summ_Click(){
+        buttonTotal.setOnClickListener(){
+            var mon200: Int = (editText200.text.toString()).textToInt() * 200
+            var mon100: Int = (editText100.text.toString()).textToInt() * 100
+            var mon50: Int = (editText50.text.toString()).textToInt() * 50
+            var mon20: Int = (editText20.text.toString()).textToInt() * 20
+            var mon10: Int = (editText10.text.toString()).textToInt() * 10
+            var mon5: Int = (editText10.text.toString()).textToInt() * 5
+            var mon2: Int = (editText2.text.toString()).textToInt() * 2
+            var mon1: Int = (editText1.text.toString()).textToInt() * 1
+            var mon0_5: Double = (editText0_5.text.toString()).textToInt() * 0.5
+            var mon0_2: Double = (editText0_2.text.toString()).textToInt() * 0.2
+            var mon0_1: Double = (editText0_1.text.toString()).textToInt() * 0.1
+            var mon0_05: Double = (editText0_05.text.toString()).textToInt() * 0.05
+            var mon0_02: Double = (editText0_02.text.toString()).textToInt() * 0.02
+            var mon0_01: Double = (editText0_01.text.toString()).textToInt() * 0.01
+            var total: String =(mon200 + mon100 + mon50 + mon20 + mon10 + mon5 +
+                    mon2 + mon1 + mon0_5 + mon0_2 + mon0_1 + mon0_05 +
+                    mon0_02 + mon0_01).toString()
+            textViewTotal.setText(total)
+        }
 
+    }
+}
 
