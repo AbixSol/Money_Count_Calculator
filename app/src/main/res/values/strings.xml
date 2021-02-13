@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Money Counter Calculator</string>
     <string name="input_amount">Amount</string>
-    <string name="text">0</string>
+    <string name="text">0.0</string>
 </resources>
