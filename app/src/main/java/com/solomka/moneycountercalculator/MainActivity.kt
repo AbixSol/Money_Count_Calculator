@@ -2,6 +2,8 @@ package com.solomka.moneycountercalculator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Window
+import androidx.appcompat.app.ActionBar
 import kotlinx.android.synthetic.main.activity_main.*
 import java.text.DecimalFormat
 import kotlin.concurrent.thread
@@ -11,11 +13,14 @@ class MainActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
         setTheme(R.style.AppTheme)
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        supportActionBar?.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM;
+        supportActionBar?.setCustomView(R.layout.action_bar_layout);
+
+
         sumClick()
 
     }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Money Counter Calculator</string>
+    <string name="app_name">Cash Counter </string>
     <string name="input_amount">Amount</string>
     <string name="text">0.0</string>
     <string name="total">TOTAL :</string>
