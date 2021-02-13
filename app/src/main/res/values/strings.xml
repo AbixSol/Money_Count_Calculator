@@ -2,4 +2,24 @@
     <string name="app_name">Money Counter Calculator</string>
     <string name="input_amount">Amount</string>
     <string name="text">0.0</string>
+    <string name="total">TOTAL :</string>
+    <string name="twoHundred">200</string>
+    <string name="hundred">100</string>
+    <string name="fifty">50</string>
+    <string name="twenty">20</string>
+    <string name="ten">10</string>
+    <string name="five">5</string>
+    <string name="two">2</string>
+    <string name="one">1</string>
+    <string name="zerofifty">0.5</string>
+    <string name="zerotwenty">0.2</string>
+    <string name="zeroten">0.1</string>
+    <string name="zerofive">0.05</string>
+    <string name="zerozerotwo">0.02</string>
+    <string name="zerozeroone">0.01</string>
+
+
+
+
+
 </resources>
